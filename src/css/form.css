@@ -1,0 +1,122 @@
+.form {
+  margin: 36px auto auto;
+}
+
+.input-search {
+  box-sizing: border-box;
+  width: 272px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  background-color: #fff;
+  outline: none;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+}
+
+.input-search:hover {
+  border-color: #000;
+}
+
+.input-search:focus {
+  border-color: #4e75ff;
+}
+
+.btn-search {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+  outline: none;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.btn-search:hover,
+.btn-search:focus {
+  background-color: #6c8cff;
+}
+
+.btn-load {
+  margin: 32px auto;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 125px;
+  height: 40px;
+  background-color: #4e75ff;
+  outline: none;
+  border: none;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.btn-load:hover,
+.btn-load:focus {
+  background-color: #6c8cff;
+}
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  margin: 32px auto;
+  width: 15px;
+  aspect-ratio: 1;
+  position: relative;
+  animation: l9-0 1.5s infinite steps(2);
+}
+.loader::before,
+.loader::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #4e75ff;
+}
+.loader::before {
+  box-shadow: 26px 0;
+  transform: translateX(-26px);
+  animation: l9-1 0.75s infinite linear alternate;
+}
+.loader::after {
+  transform: translateX(13px) rotate(0deg) translateX(13px);
+  animation: l9-2 0.75s infinite linear alternate;
+}
+@keyframes l9-0 {
+  0%,
+  49.9% {
+    transform: scale(1);
+  }
+  50%,
+  100% {
+    transform: scale(-1);
+  }
+}
+@keyframes l9-1 {
+  100% {
+    box-shadow: 52px 0;
+  }
+}
+@keyframes l9-2 {
+  100% {
+    transform: translateX(13px) rotate(-180deg) translateX(13px);
+  }
+}
